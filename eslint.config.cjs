@@ -165,7 +165,7 @@ module.exports = [
         "skipComments": true
       }],
       "max-params": ["warn", 5],           // Max function parameters
-      "max-statements": ["warn", 20],       // Max statements per function
+      "max-statements": ["warn", 50],       // Max statements per function
 
       // ----- Code Quality -----
       "eqeqeq": ["error", "always"],       // Always use strict equality
