@@ -47,6 +47,15 @@ module.exports = {
           "css-loader",   // 2. Turns CSS into CommonJS modules
           "sass-loader"   // 1. Compiles SCSS to CSS
         ]
+      },
+      {
+        // Transpile JS files using Babel (excluding node_modules)
+        test: /\.js$/i,
+        exclude: /node_modules/,
+        use: {
+          loader: "babel-loader"
+          // Babel options are read from babel.config.json
+        }
       }
     ]
   },
